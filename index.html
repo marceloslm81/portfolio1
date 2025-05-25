@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio profissional de Marcelo Silva, desenvolvedor front-end especialista em performance e design moderno.">
+    <meta name="keywords"
+        content="desenvolvedor front-end, portfólio, HTML, CSS, JavaScript, React, Tailwind, desenvolvimento web, design responsivo, acessibilidade">
+    <meta name="author" content="Marcelo Silva">
+    <link rel="canonical" href="https://www.seusite.com.br/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Marcelo Silva - Desenvolvedor Full Stack | Portfólio Profissional</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-name">Marcelo Silva</span>
+                <span class="logo-title">Desenvolvedor Full Stack</span>
+            </a>
+            <nav class="main-nav">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="icon-menu"></span>
+                </button>
+                <ul id="primary-navigation" data-visible="false" class="nav-list">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformando Ideias em Experiências Digitais Excepcionais</h1>
+                <p class="hero-description">Sou um desenvolvedor Full Stack com paixão por performance, interfaces
+                    intuitivas e design de ponta. Utilizo tecnologias como HTML semântico, CSS moderno (incluindo
+                    animações e transições), JavaScript avançado (ES6+), e frameworks robustos como React e Tailwind CSS
+                    para entregar soluções web de alto nível.</p>
+                <a href="#contato" class="button primary-button">Entre em Contato</a>
+            </div>
+            <div class="hero-image">
+                <img src="./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
+                    alt="Ilustração de um desenvolvedor trabalhando" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./img/Imagem do WhatsApp de 2025-05-04 à(s) 12.16.21_347ec160.jpg" width="500px"
+                        alt="Foto de Marcelo Silva" loading="lazy">
+                </div><br><br>
+                <div class="about-text">
+                    <p>Olá novamente! Sou Marcelo Silva, um desenvolvedor Full Stack dedicado, com
+                        experiência na criação de websites dinâmicos e de alta performance. Minha jornada no mundo do
+                        desenvolvimento web é movida pela busca constante por inovação e pela satisfação em ver ideias
+                        ganharem vida no ambiente digital.</p>
+                    <p>Animado com a perspectiva de novos desafios, coloco minha experiência à disposição de empresas,
+                        agências e profissionais que buscam soluções criativas e personalizadas. Se a sua organização
+                        valoriza um profissional dedicado e com um olhar estratégico para o futuro, adoraria explorar
+                        como posso contribuir!</p><br><br>
+                    <p class="habilidade">Minhas principais habilidades incluem:</p>
+                    <ul class="skills-list">
+                        <li>HTML5 semântico e acessível</li>
+                        <li>CSS3 com pré-processadores (Sass, Less) e metodologias (BEM)</li>
+                        <li>JavaScript (ES6+) e frameworks / bibliotecas (React, Vue.js, Next.js)</li>
+                        <li>Node.js: Back-end eficiente e escalável com Node.js.</li>
+                        <li>Otimização de performance web (PageSpeed, Core Web Vitals)</li>
+                        <li>Acessibilidade (WCAG) e boas práticas de SEO</li>
+                        <li>TypeScript: Código front-end e back-end robusto com TypeScript.</li>
+                        <li>Front-end: Interfaces de usuário interativas e responsivas.</li>
+                        <li>Back-end: Lógica de servidor poderosa e confiável.</li>
+                        <li>Análise de Dados: Insights valiosos através da análise de dados.</li>
+                        <li>Versionamento com Git e GitHub</li>
+                        <li>Integração com APIs</li>
+                    </ul>
+                    <a href="./img/Marcelo Cavalcanti - Desenvolvedor Front End.pdf" class="button secondary-button"
+                        target="_blank" rel="noopener noreferrer">Ver Currículo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section services-section">
+        <div class="container">
+            <h2 class="section-title">Meus Serviços</h2>
+            <p class="section-description">Ofereço uma gama de serviços de desenvolvimento front-end para ajudar você a
+                alcançar seus objetivos online.</p>
+            <div class="grid services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="service-title">Desenvolvimento de Websites e Aplicações Web Modernas</h3>
+                    <p class="service-description">Criação de websites e aplicações web com foco em performance,
+                        escalabilidade e experiência do usuário, utilizando as tecnologias mais recentes do mercado.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 class="service-title">Criação de Landing Pages de Alta Conversão</h3>
+                    <p class="service-description">Desenvolvimento de páginas de destino otimizadas para conversão, com
+                        design atraente, testes A/B e análise de resultados para maximizar o ROI das suas campanhas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="service-title">Portfólios Online e Blogs Personalizados com CMS</h3>
+                    <p class="service-description">Construção de plataformas de portfólio e blogs dinâmicos, integrados
+                        com sistemas de gerenciamento de conteúdo (CMS) como WordPress ou Strapi, para fácil
+                        atualização.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="service-title">Design Responsivo e Otimização Mobile Avançada</h3>
+                    <p class="service-description">Implementação de layouts responsivos que se adaptam a qualquer
+                        dispositivo, além de otimizações específicas para performance em dispositivos móveis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="service-title">Consultoria em UI/UX e Arquitetura Front-End</h3>
+                    <p class="service-description">Serviços de consultoria para melhorar a usabilidade e o design da sua
+                        interface, além de definir a melhor arquitetura para o seu projeto front-end.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="service-title">Otimização de Performance e Acessibilidade Web</h3>
+                    <p class="service-description">Auditoria e implementação de melhorias para garantir um website
+                        rápido,
+                        acessível a todos os usuários e bem posicionado nos motores de busca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos Recentes</h2>
+            <p class="section-description">Confira alguns dos meus trabalhos mais recentes. Cada projeto demonstra minha
+                dedicação à qualidade e atenção aos detalhes.</p>
+
+            <div class="grid portfolio-grid">
+
+                <article class="project-card" data-modal-target="#modal-agencia">
+                    <img src="./img/Projeto Ana Bella.png" alt="projeto-anna-bella" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Anna Bella Modelo</h3>
+                        <p class="project-description">Website completo para uma modelo.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-blog">
+                    <img src="./img/Projeto Caafeteria.png" alt="projeto-cafeterio" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Cafeteria Sensação</h3>
+                        <p class="project-description">Pagina de uma cafeteria simples, com sobre, horário de
+                            funcionamento e localização.</p>
+                        <span class="project-tech">HTML, CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-ecommerce">
+                    <img src="./img/Projeto Cabeleireiro.png" alt="projeto-cabeleireiro" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Cabeleireiro</h3>
+                        <p class="project-description">Este é um projeto web minimalista, construído com HTML para a
+                            estrutura e CSS, com o objetivo de divulgar um salão de beleza.
+                        </p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-saas">
+                    <img src="./img/Projeto Cadastro.png" alt="projeto-cadastro" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Cadastro de Clientes</h3>
+                        <p class="project-description">Esse é um projeto simples de cadastro de clientes.
+                        </p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-dashboard">
+                    <img src="./img/Projeto Cidade.png" alt="projeto-notícias-cidade" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Notícas Cidade</h3>
+                        <p class="project-description">Este é um projeto web básico para um site de notícias chamado
+                            "Notícias Cidade".
+                        </p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-mobileapp">
+                    <img src="./img/Projeto Conversor.png" alt="projeto-conversor-de-moedas" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Conversor de Moedas</h3>
+                        <p class="project-description">Um simples conversor de moedas de Real para Dolar, Euro, Libra e
+                            Bitcoin.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-hamburg">
+                    <img src="./img/Projeto Hamburgueria.png" alt="projeto-hamburgueria" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Hamburgueria</h3>
+                        <p class="project-description">Este é um projeto web minimalista para um restaurante, com foco
+                            na apresentação do menu através de categorias.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-hotel">
+                    <img src="./img/Projeto Hotel.png" alt="projeto-chalé-hotel" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Chalé Hotel</h3>
+                        <p class="project-description">Este é um website de hotel ou chalé com um design clássico e
+                            informativo.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-mario">
+                    <img src="./img/Projeto Mario.png" alt="projeto-desentupidora-mario" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Desentupidora Mario</h3>
+                        <p class="project-description">Este projeto de website temático, inspirado no filme "The Super
+                            Mario Bros.", demonstra um design profissional e envolvente.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-sort">
+                    <img src="./img/Projeto Sorteador.png" alt="projeto-sorteador" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Sorteador</h3>
+                        <p class="project-description">Este é um projeto web básico para sortear um número aleatório
+                            dentro de um intervalo definido pelo usuário.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-starbocks">
+                    <img src="./img/Projeto Starbocks.png" alt="starbocks" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Starbocks</h3>
+                        <p class="project-description">Este projeto de landing page para uma bebida específica da
+                            Starbucks.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-store">
+                    <img src="./img/Projeto Store.png" alt="dvelloper-store" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Dvelloper Store</h3>
+                        <p class="project-description">Esta é uma landing page com um design moderno e profissional,
+                            focada no lançamento do Apple Watch Série 10.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-unes">
+                    <img src="./img/Projeto Universidade.png" alt="Universidade" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Unes Universidade</h3>
+                        <p class="project-description">Este é um projeto de website institucional para a "UNES
+                            Universidade", com um design limpo e focado na informação.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-parallax">
+                    <img src="./img/Parallax.png" alt="parallax" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Teste Parallax</h3>
+                        <p class="project-description">Este é um modelo de website parallax com um design visualmente
+                            deslumbrante e imersivo.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-tec">
+                    <img src="./img/Captura de tela 2025-05-04 221709.png" alt="tec-blog" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Tec Bolg</h3>
+                        <p class="project-description">A página apresenta uma estrutura comum para blogs, com uma barra
+                            de navegação, conteúdo principal e uma barra lateral.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-react">
+                    <img src="./img/Captura de tela 2025-05-17 144503.png" alt="tec-blog" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Projeto React.js</h3>
+                        <p class="project-description">Esse é meu projeto prático utilizando a biblioteca React.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript, React</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-estetica">
+                    <img src="./img/Salão Estética.png" alt="estetica" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Projeto Salão de Estética</h3>
+                        <p class="project-description">Este é um website exclusivo e particular desenvolvido pela
+                            Dvelloper para um cliente do setor de beleza.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-modal-target="#modal-imobiliaria">
+                    <img src="./img/Captura de Tela 2025-05-25 às 18.30.57.png" alt="imobiliaria" loading="lazy">
+                    <div class="project-info">
+                        <h3 class="project-title">Projeto Imobiliária</h3>
+                        <p class="project-description">O site "Roper Imóveis" foi desenvolvido para oferecer uma
+                            experiência de usuário moderna e eficiente na busca e visualização de propriedades.</p>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-description">Estou sempre aberto a novas oportunidades e desafios. Entre em contato para
+                discutirmos seu projeto!</p>
+            <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a
+                        href="mailto:marcelo.slm.mc@gmail.com">marcelo.slm.mc@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a
+                        href="https://www.linkedin.com/in/marcelo-cavalcanti-silva/" target="_blank"
+                        rel="noopener noreferrer">linkedin.com/in/marcelo-cavalcanti-silva</a></p>
+                <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/marceloslm81"
+                        target="_blank" rel="noopener noreferrer">github.com/marceloslm81</a></p>
+                <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a
+                        href="https://www.instagram.com/marcelo_dvelloper/?next=%2Fmarcelo_dvellop%2F" target="_blank"
+                        rel="noopener noreferrer">@marcelo_dvelloper</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal-agencia">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Anna Bella</h3>
+            <p class="modal-description">Website completo desenvolvido para uma modelo com foco em
+                aumentar a presença online. O projeto incluiu um design moderno e responsivo,
+                integração com formulários de contato, portfólio e sobre.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./annabella.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-blog">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Cafeteria Sensação</h3>
+            <p class="modal-description">Este é um website básico e informativo para uma cafeteria,
+                construído com HTML para a estrutura do conteúdo e CSS para a apresentação visual. O design é simples,
+                direto e focado em fornecer as informações essenciais para os clientes, como descrição, horário e
+                localização. A escolha de cores e a imagem de fundo contribuem para criar uma atmosfera convidativa.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS.</p>
+            <a href="./cafe.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video do
+                Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-ecommerce">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Salão de Cabeleireiro</h3>
+            <p class="modal-description">Este é um exemplo de um website simples e direto para um salão de beleza,
+                focado em apresentar a proposta de valor e incentivar o agendamento e a exploração dos serviços. A
+                utilização de cores claras, tipografia legível e chamadas para ação bem posicionadas contribuem para uma
+                experiência de usuário clara e objetiva. A estrutura HTML é provavelmente semântica, facilitando a
+                acessibilidade e o SEO, enquanto o CSS garante uma apresentação visual moderna e profissional..</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./corte.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video
+                do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-saas">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Cadastro de Clientes</h3>
+            <p class="modal-description">Este é um exemplo de um formulário de cadastro de clientes muito básico,
+                construído com HTML para a estrutura dos campos e CSS para uma apresentação visual limpa e funcional. O
+                design é simples e direto, priorizando a usabilidade para a entrada de dados. A falta de elementos
+                visuais complexos sugere um foco na funcionalidade principal de coleta de informações. Para uma
+                aplicação completa, seria necessário adicionar lógica de back-end para processar e armazenar os dados
+                submetidos.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./cadastro.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-dashboard">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Notícias Cidade</h3>
+            <p class="modal-description">Este é um exemplo de um website de notícias simples, com uma estrutura HTML que
+                organiza o conteúdo em diferentes seções e uma estilização CSS que busca clareza e organização visual. O
+                uso de cores para destacar informações importantes e a divisão em colunas ajudam o usuário a navegar por
+                diferentes tipos de notícias. A inclusão de imagens torna o conteúdo mais atraente. Como se trata de um
+                projeto front-end, a funcionalidade de exibir notícias dinamicamente e processar o cadastro da
+                newsletter dependeria da implementação do back-end.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS JavaScript.</p>
+            <a href="./noticias.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-mobileapp">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Conversor de Moedas</h3>
+            <p class="modal-description">Este é um projeto web básico para um conversor de moedas,
+                construído com HTML para a estrutura, CSS para a estilização e JavaScript para a lógica de conversão
+                .</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./conversor.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-hamburg">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Hamburgueria</h3>
+            <p class="modal-description">Este é um exemplo de um website de restaurante simples e direto, com foco em
+                apresentar o menu através de categorias claramente definidas na barra de navegação. A imagem de destaque
+                serve como um apelo visual imediato. A estrutura HTML organiza a navegação e o conteúdo principal,
+                enquanto o CSS define uma estética com cores contrastantes para a navegação e uma apresentação visual
+                atraente para a comida.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./burger.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video
+                do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-hotel">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Chalé Hotel</h3>
+            <p class="modal-description">Este é um exemplo de um website de hotel ou chalé com um design clássico e
+                informativo. A estrutura HTML organiza as diferentes seções de conteúdo de forma lógica. A estilização
+                CSS utiliza cores neutras e tipografia elegante para criar uma atmosfera acolhedora. A apresentação das
+                comodidades com imagens e descrições visa informar e atrair potenciais hóspedes. A barra lateral com a
+                citação e o link de reserva são chamadas para ação importantes</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./hotel.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video
+                do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-mario">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Desentupidora Mario</h3>
+            <p class="modal-description">Este projeto de website temático "The Super Mario Bros." um nível
+                profissional através de um design visualmente rico e envolvente, alinhado à estética do filme. A
+                estrutura HTML semântica e bem organizada, enquanto o CSS aplicaria técnicas avançadas para criar
+                um layout fluido e responsivo, uma tipografia personalizada, uma paleta de cores vibrante, fundos
+                imersivos e efeitos visuais sofisticados. A potencial incorporação de JavaScript adicionaria
+                interatividade e dinamismo, elevando a experiência do usuário a um nível profissional. A atenção aos
+                detalhes visuais, como o posicionamento e a iluminação dos personagens, contribui para uma apresentação
+                impactante e memorável.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./mario.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video
+                do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-sort">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Sorteador</h3>
+            <p class="modal-description">Este é um projeto simples e direto de um sorteador de números online. A
+                estrutura HTML organiza os elementos de entrada e o botão de ação. O CSS fornece uma apresentação visual
+                com um tema escuro e cores contrastantes para destacar os elementos interativos. A lógica principal de
+                gerar o número aleatório e exibir o resultado é implementada com JavaScript, tornando a página funcional
+                sem a necessidade de interação com um servidor (front-end puro).</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./sorteador.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-starbocks">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Starbocks</h3>
+            <p class="modal-description">Esta abordagem para a landing page da bebida Starbucks busca inovar ao romper
+                com layouts convencionais e priorizar um visual assimétrico e impactante. A imagem da bebida é o
+                elemento central, integrada a uma forma de fundo orgânica. O texto e a chamada para ação são
+                posicionados de forma estratégica para criar contraste e direcionar o olhar. A tipografia e a paleta de
+                cores são utilizadas de maneira expressiva, buscando transmitir a singularidade e o apelo da bebida
+                específica, diferenciando-se de uma promoção genérica da marca. A sutileza nas miniaturas das outras
+                bebidas mantém o foco no produto principal, enquanto sugere a variedade do cardápio.</p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./stabucks.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-store">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Dvelloper Store</h3>
+            <p class="modal-description">Esta landing page para o Apple Watch Série 10 apresenta um design profissional
+                e moderno, com um layout imersivo, tipografia elegante, paleta de cores sofisticada e imagens de alta
+                qualidade do produto. A estrutura HTML é bem organizada, e o CSS cria uma estética visualmente atraente
+                e focada no destaque do novo lançamento. A potencial adição de JavaScript para interatividade e
+                animações sutis elevaria ainda mais a experiência do usuário, tornando a página informativa e
+                envolvente.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./store.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video
+                do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-unes">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Unes Universidade</h3>
+            <p class="modal-description">Este website institucional para a UNES Universidade adota uma abordagem de
+                design limpa e informativa, priorizando a clareza e a facilidade de leitura. A estrutura HTML organiza o
+                conteúdo de forma lógica, enquanto o CSS garante uma apresentação visual profissional e discreta. A
+                utilização de cores neutras, tipografia legível e um layout bem espaçado contribuem para uma experiência
+                de usuário focada na informação institucional. A seção de destaque com a imagem e a mensagem principal
+                serve para engajar o visitante logo de início.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./unes.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video do
+                Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-tec">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Tec Blog</h3>
+            <p class="modal-description">Este é um exemplo de um website de blog de tecnologia com um design básico e
+                direto. A estrutura HTML organiza o conteúdo em um layout de blog padrão, enquanto o CSS aplica estilos
+                simples para cores, tipografia e layout em colunas. O foco principal é apresentar o conteúdo do blog de
+                forma clara e acessível aos leitores. A barra lateral fornece links para outras postagens e categorias
+                para facilitar a navegação.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./blog.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver Video do
+                Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-parallax">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Teste Parallax</h3>
+            <p class="modal-description">Este modelo de website parallax para um passeio de balões utiliza múltiplas
+                camadas de conteúdo que se movem a diferentes velocidades durante a rolagem, criando uma experiência
+                visual imersiva e dinâmica. A imagem deslumbrante do passeio ao amanhecer/pôr do sol serve como um fundo
+                impactante para a seção principal (hero). Seções subsequentes utilizariam o mesmo efeito parallax para
+                apresentar informações adicionais e galerias de mídia. O JavaScript é crucial para implementar o efeito
+                de movimento sincronizado com a rolagem, enquanto o HTML fornece a estrutura das seções e o CSS define o
+                layout e a estilização visual, mantendo a atmosfera mágica e convidativa da experiência do passeio de
+                balões.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./parallax.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-react">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Projeto React</h3>
+            <p class="modal-description">Este é o meu projeto prático utilizando a biblioteca React. Desenvolvi
+                um blog simples, porém funcional, que permite a exibição de uma lista de posts na página inicial. Cada
+                post possui um título, um breve resumo e um link "Ler Mais" que direciona o usuário para uma página
+                dedicada com o conteúdo completo. Este projeto demonstra minha compreensão dos conceitos fundamentais do
+                React, como a criação e manipulação de componentes (funcionais e de classe) e gerenciamento de estado
+                com `useState`. A estilização foi realizada com CSS para proporcionar uma experiência de usuário
+                agradável e elegante.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, React.</p>
+            <a href="./react.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-imobiliaria">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Projeto Imobiliária</h3>
+            <p class="modal-description">Este site imobiliário oferece uma experiência de busca de imóveis moderna e
+                eficiente.
+                Funcionalidades Principais:
+                Design Responsivo: Adapta-se a qualquer tela (celular, tablet, desktop).
+                Tema Claro/Escuro: Permite escolher entre dois visuais, salvando sua preferência.
+                Animações Suaves: Elementos e seções aparecem dinamicamente ao rolar a página.
+                Busca Avançada: Filtra imóveis por localização, tipo, preço e número de quartos.
+                Destaques de Imóveis: Mostra propriedades relevantes com informações básicas.
+                Modal de Detalhes: Exibe informações completas do imóvel com galeria de fotos e características ao
+                clicar.
+                Contato: Formulário e dados para comunicação direta.
+                Tecnologias Utilizadas:
+                HTML5: Estrutura base do conteúdo.
+                CSS3: Estilização, design responsivo e temas (claro/escuro).
+                JavaScript: Interatividade, lógica de busca, animações e controle do modal.
+                Font Awesome: Biblioteca para ícones profissionais.
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./imobiliaria.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-estetica">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-close>&times;</span>
+            <h3 class="modal-title">Projeto Salão de Estetica</h3>
+            <p class="modal-description">Descrição do Projeto: Website de Salão de Beleza
+                Este é um website exclusivo e particular desenvolvido pela Dvelloper para um cliente do setor de beleza.
+                O projeto focou em criar uma presença online sofisticada e funcional, permitindo ao salão apresentar
+                seus serviços e facilitar agendamentos diretos via WhatsApp.
+
+                Tecnologias Principais:
+                HTML5: Estrutura e semântica do conteúdo.
+                CSS3: Design responsivo, estilização e animações modernas.
+                JavaScript: Interatividade (menu responsivo, scroll suave, modal de preços dinâmico e integração com
+                WhatsApp).
+            </p>
+            <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+            <a href="./estetica.html" target="_blank" rel="noopener noreferrer" class="button secondary-button">Ver
+                Video do Projeto</a>
+        </div>
+    </div>
+
+
+    <button class="scroll-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Marcelo Silva - Desenvolvedor Full Stack. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/sua-chave-do-fontawesome.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
