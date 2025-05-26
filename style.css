@@ -452,9 +452,14 @@ a {
   border-radius: var(--border-radius);
   width: 80%;
   /* Largura do modal */
-  max-width: 600px;
+  max-width: 750px;
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content video {
+  max-width: 750px;
+
 }
 
 .modal-close {
@@ -788,6 +793,13 @@ a {
 
   .modal-description {
     font-size: 0.95rem;
+  }
+
+  .modal-content video {
+    max-width: 320px;
+    height: 200px;
+    position: relative;
+    right: 10px;
   }
 
   .modal-content .secondary-button {
