@@ -92,4 +92,32 @@ document.addEventListener('DOMContentLoaded', () => {
     whatsappButton.rel = 'noopener noreferrer';
     whatsappButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
     document.body.appendChild(whatsappButton);
+
+    // Controle do header no scroll
+    let lastScrollTop = 0;
+    const header = document.querySelector('.main-header');
+    const scrollThreshold = 100;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Adiciona classe quando o scroll passar do threshold
+        if (currentScroll > scrollThreshold) {
+            header.classList.add('scrolled');
+            
+            // Controle de visibilidade baseado na direção do scroll
+            if (currentScroll > lastScrollTop) {
+                // Scroll para baixo
+                header.classList.remove('visible');
+            } else {
+                // Scroll para cima
+                header.classList.add('visible');
+            }
+        } else {
+            header.classList.remove('scrolled');
+            header.classList.remove('visible');
+        }
+        
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
 });
