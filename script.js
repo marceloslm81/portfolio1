@@ -118,3 +118,105 @@ document.addEventListener('DOMContentLoaded', () => {
       lastScrollTop = scrollTop;
     });
 });
+
+// Substituir a seção de modais (linhas 37-67)
+
+// Modal System
+class ModernModal {
+  constructor() {
+    this.modals = document.querySelectorAll('.modal');
+    this.modalTriggers = document.querySelectorAll('[data-modal-target]');
+    this.modalCloseButtons = document.querySelectorAll('[data-modal-close]');
+    this.init();
+  }
+
+  init() {
+    // Abrir modais
+    this.modalTriggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalTarget = trigger.getAttribute('data-modal-target');
+        const modal = document.querySelector(modalTarget);
+        if (modal) {
+          this.openModal(modal);
+        }
+      });
+    });
+
+    // Fechar modais
+    this.modalCloseButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        if (modal) {
+          this.closeModal(modal);
+        }
+      });
+    });
+
+    // Fechar ao clicar no overlay
+    this.modals.forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          this.closeModal(modal);
+        }
+      });
+    });
+
+    // Fechar com ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const openModal = document.querySelector('.modal.show');
+        if (openModal) {
+          this.closeModal(openModal);
+        }
+      }
+    });
+  }
+
+  openModal(modal) {
+    modal.style.display = 'block';
+    document.body.classList.add('modal-open');
+    
+    // Força o reflow antes de adicionar a classe show
+    modal.offsetHeight;
+    
+    modal.classList.add('show');
+    
+    // Pausa outros vídeos
+    this.pauseAllVideos();
+    
+    // Auto-play do vídeo do modal
+    const video = modal.querySelector('video');
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    }
+  }
+
+  closeModal(modal) {
+    modal.classList.remove('show');
+    
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+      
+      // Pausa o vídeo
+      const video = modal.querySelector('video');
+      if (video) {
+        video.pause();
+      }
+    }, 400);
+  }
+
+  pauseAllVideos() {
+    const allVideos = document.querySelectorAll('video');
+    allVideos.forEach(video => {
+      video.pause();
+    });
+  }
+}
+
+// Inicializar o sistema de modais
+document.addEventListener('DOMContentLoaded', () => {
+  new ModernModal();
+});
