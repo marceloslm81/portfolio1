@@ -93,31 +93,28 @@ document.addEventListener('DOMContentLoaded', () => {
     whatsappButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
     document.body.appendChild(whatsappButton);
 
-    // Controle do header no scroll
+    // Controle do header no scroll - Versão aprimorada
     let lastScrollTop = 0;
     const header = document.querySelector('.main-header');
-    const scrollThreshold = 100;
-
+    const scrollThreshold = 50; // Threshold menor para ativação mais rápida
+    
     window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > scrollThreshold) {
+        header.classList.add('scrolled');
         
-        // Adiciona classe quando o scroll passar do threshold
-        if (currentScroll > scrollThreshold) {
-            header.classList.add('scrolled');
-            
-            // Controle de visibilidade baseado na direção do scroll
-            if (currentScroll > lastScrollTop) {
-                // Scroll para baixo
-                header.classList.remove('visible');
-            } else {
-                // Scroll para cima
-                header.classList.add('visible');
-            }
+        // Esconde o header quando rola para baixo, mostra quando rola para cima
+        if (scrollTop > lastScrollTop && scrollTop > 200) {
+          header.classList.remove('visible');
         } else {
-            header.classList.remove('scrolled');
-            header.classList.remove('visible');
+          header.classList.add('visible');
         }
-        
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      } else {
+        header.classList.remove('scrolled');
+        header.classList.remove('visible');
+      }
+      
+      lastScrollTop = scrollTop;
     });
 });

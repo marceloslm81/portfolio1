@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.0">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -26,7 +26,7 @@
         <div class="container">
             <a href="/" class="logo">
                 <span class="logo-name">Marcelo Silva</span>
-                <span class="logo-title">Desenvolvedor Full Stack</span>
+                <span class="logo-title">Desenvolvedor Front-End</span>
             </a>
             <nav class="main-nav">
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -44,282 +44,845 @@
     </header>
 
     <section id="hero" class="hero-section">
+        <!-- Background Effects -->
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+        </div>
+        
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Transformando Ideias em Experiências Digitais Excepcionais</h1>
-                <p class="hero-description">Sou um desenvolvedor Full Stack com paixão por performance, interfaces
-                    intuitivas e design de ponta. Utilizo tecnologias como HTML semântico, CSS moderno (incluindo
-                    animações e transições), JavaScript avançado (ES6+), e frameworks robustos como React e Tailwind CSS
-                    para entregar soluções web de alto nível.</p>
-                <a href="#contato" class="button primary-button">Entre em Contato</a>
-            </div>
-            <div class="hero-image">
-                <img src="./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
-                    alt="Ilustração de um desenvolvedor trabalhando" loading="lazy">
+            <div class="hero-grid">
+                <!-- Content Side -->
+                <div class="hero-content">
+                    <!-- Badge -->
+                    <div class="hero-badge">
+                        <span class="hero-badge-icon">⚡</span>
+                        <span class="hero-badge-text">Desenvolvedor Front-End</span>
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="hero-title">
+                        Transformando <span class="highlight-primary">Ideias</span><br>
+                        em Experiências <span class="highlight-accent">Digitais</span>
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="hero-description">
+                        Especialista em desenvolvimento web moderno, criando soluções inovadoras 
+                        com React, JavaScript ES6+, CSS avançado, HTML 5, e design responsivo para 
+                        entregar experiências digitais excepcionais.
+                    </p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="hero-actions">
+                        <a href="#contato" class="btn btn-primary">
+                            <span>Vamos Conversar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline">
+                            <span>Ver Projetos</span>
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedicação</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual Side -->
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <!-- Main Image -->
+                        <div class="hero-image-container">
+                            <img src="./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" 
+                                 alt="Desenvolvedor trabalhando" 
+                                 class="hero-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        
+                        <!-- Tech Stack Icons -->
+                        <div class="tech-stack">
+                            <div class="tech-icon tech-icon-1">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-icon tech-icon-2">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-icon tech-icon-3">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-icon tech-icon-4">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="sobre" class="section about-section">
+        <!-- Background Effects -->
+        <div class="about-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="./img/Imagem do WhatsApp de 2025-05-04 à(s) 12.16.21_347ec160.jpg" width="500px"
-                        alt="Foto de Marcelo Silva" loading="lazy">
-                </div><br><br>
-                <div class="about-text">
-                    <p>Olá novamente! Sou Marcelo Silva, um desenvolvedor Full Stack dedicado, com
-                        experiência na criação de websites dinâmicos e de alta performance. Minha jornada no mundo do
-                        desenvolvimento web é movida pela busca constante por inovação e pela satisfação em ver ideias
-                        ganharem vida no ambiente digital.</p>
-                    <p>Animado com a perspectiva de novos desafios, coloco minha experiência à disposição de empresas,
-                        agências e profissionais que buscam soluções criativas e personalizadas. Se a sua organização
-                        valoriza um profissional dedicado e com um olhar estratégico para o futuro, adoraria explorar
-                        como posso contribuir!</p><br><br>
-                    <p class="habilidade">Minhas principais habilidades incluem:</p>
-                    <ul class="skills-list">
-                        <li>HTML5 semântico e acessível</li>
-                        <li>CSS3 com pré-processadores (Sass, Less) e metodologias (BEM)</li>
-                        <li>JavaScript (ES6+) e frameworks / bibliotecas (React, Vue.js, Next.js)</li>
-                        <li>Node.js: Back-end eficiente e escalável com Node.js.</li>
-                        <li>Otimização de performance web (PageSpeed, Core Web Vitals)</li>
-                        <li>Acessibilidade (WCAG) e boas práticas de SEO</li>
-                        <li>TypeScript: Código front-end e back-end robusto com TypeScript.</li>
-                        <li>Front-end: Interfaces de usuário interativas e responsivas.</li>
-                        <li>Back-end: Lógica de servidor poderosa e confiável.</li>
-                        <li>Análise de Dados: Insights valiosos através da análise de dados.</li>
-                        <li>Versionamento com Git e GitHub</li>
-                        <li>Integração com APIs</li>
-                    </ul>
-                    <a href="./img/Marcelo Cavalcanti - Desenvolvedor Front End.pdf" class="button secondary-button"
-                        target="_blank" rel="noopener noreferrer">Ver Currículo</a>
+            
+            <div class="about-grid">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./img/Imagem do WhatsApp de 2025-05-04 à(s) 12.16.21_347ec160.jpg" 
+                             alt="Foto de Marcelo Silva" loading="lazy">
+                        <div class="image-border"></div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <h3>Marcelo Silva</h3>
+                        <p class="role">Desenvolvedor Front-End</p>
+                        <div class="experience-badge">
+                            <span class="years">1+</span>
+                            <span class="label">Anos de Experiência</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Area -->
+                <div class="about-content">
+                    <div class="intro-text">
+                        <p>Olá! Sou um desenvolvedor Front-End dedicado, com experiência na criação de websites dinâmicos e de alta performance. Minha jornada no desenvolvimento web é movida pela busca constante por inovação e pela satisfação em ver ideias ganharem vida no ambiente digital.</p>
+                        
+                        <p>Coloco minha experiência à disposição de empresas, agências e profissionais que buscam soluções criativas e personalizadas. Se sua organização valoriza um profissional dedicado e com olhar estratégico, adoraria explorar como posso contribuir!</p>
+                    </div>
+                    
+                    <!-- Skills Grid -->
+                    <div class="skills-container">
+                        <h4>Principais Tecnologias</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialties -->
+                    <div class="specialties">
+                        <h4>Especialidades</h4>
+                        <div class="specialty-list">
+                            <div class="specialty-item">
+                                <div class="specialty-icon">🎨</div>
+                                <div class="specialty-content">
+                                    <h5>Frontend Development</h5>
+                                    <p>Interfaces responsivas e interativas</p>
+                                </div>
+                            </div>
+                            <div class="specialty-item">
+                                <div class="specialty-icon">⚙️</div>
+                                <div class="specialty-content">
+                                    <h5>Backend Development</h5>
+                                    <p>APIs robustas e escaláveis</p>
+                                </div>
+                            </div>
+                            <div class="specialty-item">
+                                <div class="specialty-icon">🚀</div>
+                                <div class="specialty-content">
+                                    <h5>Performance Web</h5>
+                                    <p>Otimização e melhores práticas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <a href="./img/Marcelo Cavalcanti - Desenvolvedor Front End.pdf" 
+                           class="btn-download" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="#contato" class="btn-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Entrar em Contato</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="servicos" class="section services-section">
+        <!-- Background Effects -->
+        <div class="services-background">
+            <div class="services-particles"></div>
+            <div class="services-gradient-orb services-orb-1"></div>
+            <div class="services-gradient-orb services-orb-2"></div>
+        </div>
+        
         <div class="container">
-            <h2 class="section-title">Meus Serviços</h2>
-            <p class="section-description">Ofereço uma gama de serviços de desenvolvimento front-end para ajudar você a
-                alcançar seus objetivos online.</p>
-            <div class="grid services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3 class="service-title">Desenvolvimento de Websites e Aplicações Web Modernas</h3>
-                    <p class="service-description">Criação de websites e aplicações web com foco em performance,
-                        escalabilidade e experiência do usuário, utilizando as tecnologias mais recentes do mercado.</p>
+            <!-- Header -->
+            <div class="services-header">
+                <div class="services-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Serviços Profissionais</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
-                    <h3 class="service-title">Criação de Landing Pages de Alta Conversão</h3>
-                    <p class="service-description">Desenvolvimento de páginas de destino otimizadas para conversão, com
-                        design atraente, testes A/B e análise de resultados para maximizar o ROI das suas campanhas.</p>
+                <h2 class="section-title services-title">
+                    Meus <span class="highlight-text">Serviços</span>
+                </h2>
+                <p class="section-description services-description">
+                    Ofereço soluções completas de desenvolvimento front-end para transformar suas ideias em experiências digitais excepcionais.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Desenvolvimento Web Moderno</h3>
+                            <p class="service-description">
+                                Criação de websites e aplicações web com foco em performance, escalabilidade e experiência do usuário, utilizando as tecnologias mais recentes.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">React</span>
+                                <span class="feature-tag">Vue.js</span>
+                                <span class="feature-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                    <h3 class="service-title">Portfólios Online e Blogs Personalizados com CMS</h3>
-                    <p class="service-description">Construção de plataformas de portfólio e blogs dinâmicos, integrados
-                        com sistemas de gerenciamento de conteúdo (CMS) como WordPress ou Strapi, para fácil
-                        atualização.
-                    </p>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Landing Pages de Alta Conversão</h3>
+                            <p class="service-description">
+                                Desenvolvimento de páginas otimizadas para conversão, com design atraente e análise de resultados para maximizar o ROI.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">A/B Testing</span>
+                                <span class="feature-tag">Analytics</span>
+                                <span class="feature-tag">SEO</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3 class="service-title">Design Responsivo e Otimização Mobile Avançada</h3>
-                    <p class="service-description">Implementação de layouts responsivos que se adaptam a qualquer
-                        dispositivo, além de otimizações específicas para performance em dispositivos móveis.</p>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Design Responsivo Avançado</h3>
+                            <p class="service-description">
+                                Implementação de layouts que se adaptam perfeitamente a qualquer dispositivo, com otimizações específicas para mobile.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Mobile First</span>
+                                <span class="feature-tag">PWA</span>
+                                <span class="feature-tag">Performance</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3 class="service-title">Consultoria em UI/UX e Arquitetura Front-End</h3>
-                    <p class="service-description">Serviços de consultoria para melhorar a usabilidade e o design da sua
-                        interface, além de definir a melhor arquitetura para o seu projeto front-end.</p>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Consultoria UI/UX</h3>
+                            <p class="service-description">
+                                Serviços de consultoria para melhorar a usabilidade e design da interface, definindo a melhor arquitetura front-end.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Figma</span>
+                                <span class="feature-tag">Prototipagem</span>
+                                <span class="feature-tag">Usabilidade</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="service-title">Otimização de Performance e Acessibilidade Web</h3>
-                    <p class="service-description">Auditoria e implementação de melhorias para garantir um website
-                        rápido,
-                        acessível a todos os usuários e bem posicionado nos motores de busca.</p>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Otimização & Performance</h3>
+                            <p class="service-description">
+                                Auditoria e implementação de melhorias para garantir websites rápidos, acessíveis e bem posicionados nos buscadores.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Core Web Vitals</span>
+                                <span class="feature-tag">Lighthouse</span>
+                                <span class="feature-tag">Acessibilidade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Portfólios & CMS</h3>
+                            <p class="service-description">
+                                Construção de plataformas dinâmicas integradas com sistemas de gerenciamento de conteúdo para fácil atualização.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">WordPress</span>
+                                <span class="feature-tag">Strapi</span>
+                                <span class="feature-tag">Headless CMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="services-cta" data-aos="fade-up" data-aos-delay="700">
+                <h3 class="cta-title">Pronto para começar seu projeto?</h3>
+                <p class="cta-description">Vamos conversar sobre como posso ajudar a transformar sua visão em realidade.</p>
+                <div class="cta-buttons">
+                    <a href="#contato" class="btn btn-primary">
+                        <span>Iniciar Projeto</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline">
+                        <span>Ver Portfólio</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio" class="section portfolio-section">
+        <!-- Background Effects -->
+        <div class="portfolio-background">
+            <div class="portfolio-particles"></div>
+            <div class="portfolio-gradient-orb portfolio-orb-1"></div>
+            <div class="portfolio-gradient-orb portfolio-orb-2"></div>
+            <div class="portfolio-gradient-orb portfolio-orb-3"></div>
+        </div>
+        
         <div class="container">
-            <h2 class="section-title">Meus Projetos Recentes</h2>
-            <p class="section-description">Confira alguns dos meus trabalhos mais recentes. Cada projeto demonstra minha
-                dedicação à qualidade e atenção aos detalhes.</p>
+            <!-- Header -->
+            <div class="portfolio-header">
+                <div class="portfolio-badge">
+                    <span class="badge-icon">🎨</span>
+                    <span>Portfólio Profissional</span>
+                </div>
+                <h2 class="section-title portfolio-title">
+                    Meus <span class="highlight-text">Projetos</span>
+                </h2>
+                <p class="section-description portfolio-description">
+                    Confira alguns dos meus trabalhos mais recentes. Cada projeto demonstra minha
+                    dedicação à qualidade e atenção aos detalhes.
+                </p>
+            </div>
+
+            <!-- Portfolio Stats -->
+            <div class="portfolio-stats">
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Projetos Concluídos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dedicação</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte Disponível</div>
+                </div>
+            </div>
 
             <div class="grid portfolio-grid">
 
                 <article class="project-card" data-modal-target="#modal-agencia">
-                    <img src="./img/Projeto Ana Bella.png" alt="projeto-anna-bella" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Ana Bella.png" alt="projeto-anna-bella" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Website</div>
                         <h3 class="project-title">Anna Bella Modelo</h3>
-                        <p class="project-description">Website completo para uma modelo.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website completo para uma modelo com design moderno e responsivo.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-blog">
-                    <img src="./img/Projeto Caafeteria.png" alt="projeto-cafeterio" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Caafeteria.png" alt="projeto-cafeterio" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Landing Page</div>
                         <h3 class="project-title">Cafeteria Sensação</h3>
-                        <p class="project-description">Pagina de uma cafeteria simples, com sobre, horário de
-                            funcionamento e localização.</p>
-                        <span class="project-tech">HTML, CSS</span>
+                        <p class="project-description">Página de uma cafeteria com design simples e informativo, incluindo sobre, horário de funcionamento e localização.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-ecommerce">
-                    <img src="./img/Projeto Cabeleireiro.png" alt="projeto-cabeleireiro" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Cabeleireiro.png" alt="projeto-cabeleireiro" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Salão de Beleza</div>
                         <h3 class="project-title">Cabeleireiro</h3>
-                        <p class="project-description">Este é um projeto web minimalista, construído com HTML para a
-                            estrutura e CSS, com o objetivo de divulgar um salão de beleza.
-                        </p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Projeto web minimalista para divulgação de um salão de beleza, com design limpo e focado na apresentação dos serviços.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-saas">
-                    <img src="./img/Projeto Cadastro.png" alt="projeto-cadastro" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Cadastro.png" alt="projeto-cadastro" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Sistema</div>
                         <h3 class="project-title">Cadastro de Clientes</h3>
-                        <p class="project-description">Esse é um projeto simples de cadastro de clientes.
-                        </p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Sistema simples e eficiente para cadastro e gerenciamento de clientes com interface intuitiva.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-dashboard">
-                    <img src="./img/Projeto Cidade.png" alt="projeto-notícias-cidade" loading="lazy">
-                    <div class="project-info">
-                        <h3 class="project-title">Notícas Cidade</h3>
-                        <p class="project-description">Este é um projeto web básico para um site de notícias chamado
-                            "Notícias Cidade".
-                        </p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Cidade.png" alt="projeto-notícias-cidade" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Portal de Notícias</div>
+                        <h3 class="project-title">Notícias Cidade</h3>
+                        <p class="project-description">Portal de notícias com design moderno e funcional para manter a comunidade informada sobre eventos locais.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-mobileapp">
-                    <img src="./img/Projeto Conversor.png" alt="projeto-conversor-de-moedas" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Conversor.png" alt="projeto-conversor-de-moedas" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Aplicação Web</div>
                         <h3 class="project-title">Conversor de Moedas</h3>
-                        <p class="project-description">Um simples conversor de moedas de Real para Dolar, Euro, Libra e
-                            Bitcoin.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Aplicação web para conversão de moedas em tempo real, incluindo Real, Dólar, Euro, Libra e Bitcoin.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-hamburg">
-                    <img src="./img/Projeto Hamburgueria.png" alt="projeto-hamburgueria" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Hamburgueria.png" alt="projeto-hamburgueria" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Restaurante</div>
                         <h3 class="project-title">Hamburgueria</h3>
-                        <p class="project-description">Este é um projeto web minimalista para um restaurante, com foco
-                            na apresentação do menu através de categorias.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website minimalista para restaurante com foco na apresentação do menu através de categorias organizadas.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-hotel">
-                    <img src="./img/Projeto Hotel.png" alt="projeto-chalé-hotel" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Hotel.png" alt="projeto-chalé-hotel" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Hotel</div>
                         <h3 class="project-title">Chalé Hotel</h3>
-                        <p class="project-description">Este é um website de hotel ou chalé com um design clássico e
-                            informativo.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website de hotel com design clássico e informativo, apresentando acomodações e serviços de forma elegante.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-mario">
-                    <img src="./img/Projeto Mario.png" alt="projeto-desentupidora-mario" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Mario.png" alt="projeto-desentupidora-mario" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Serviços</div>
                         <h3 class="project-title">Desentupidora Mario</h3>
-                        <p class="project-description">Este projeto de website temático, inspirado no filme "The Super
-                            Mario Bros.", demonstra um design profissional e envolvente.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website temático inspirado no filme "The Super Mario Bros." com design profissional e envolvente para empresa de desentupimento.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-sort">
-                    <img src="./img/Projeto Sorteador.png" alt="projeto-sorteador" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Sorteador.png" alt="projeto-sorteador" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Aplicação Web</div>
                         <h3 class="project-title">Sorteador</h3>
-                        <p class="project-description">Este é um projeto web básico para sortear um número aleatório
-                            dentro de um intervalo definido pelo usuário.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Aplicação web simples e direta para sorteio de números aleatórios com interface intuitiva e design moderno.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-starbocks">
-                    <img src="./img/Projeto Starbocks.png" alt="starbocks" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Starbocks.png" alt="starbocks" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Landing Page</div>
                         <h3 class="project-title">Starbocks</h3>
-                        <p class="project-description">Este projeto de landing page para uma bebida específica da
-                            Starbucks.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Landing page moderna e atrativa para uma bebida específica da Starbucks com design responsivo.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-store">
-                    <img src="./img/Projeto Store.png" alt="dvelloper-store" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Store.png" alt="dvelloper-store" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce</div>
                         <h3 class="project-title">Dvelloper Store</h3>
-                        <p class="project-description">Esta é uma landing page com um design moderno e profissional,
-                            focada no lançamento do Apple Watch Série 10.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Landing page moderna e profissional focada no lançamento do Apple Watch Série 10 com design atrativo.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-unes">
-                    <img src="./img/Projeto Universidade.png" alt="Universidade" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Projeto Universidade.png" alt="Universidade" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Institucional</div>
                         <h3 class="project-title">Unes Universidade</h3>
-                        <p class="project-description">Este é um projeto de website institucional para a "UNES
-                            Universidade", com um design limpo e focado na informação.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website institucional para a UNES Universidade com design limpo e focado na apresentação de informações acadêmicas.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-parallax">
-                    <img src="./img/Parallax.png" alt="parallax" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Parallax.png" alt="parallax" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Efeito Visual</div>
                         <h3 class="project-title">Teste Parallax</h3>
-                        <p class="project-description">Este é um modelo de website parallax com um design visualmente
-                            deslumbrante e imersivo.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">Website com efeito parallax deslumbrante e imersivo, criando uma experiência visual única para o usuário.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-tec">
-                    <img src="./img/Captura de tela 2025-05-04 221709.png" alt="tec-blog" loading="lazy">
-                    <div class="project-info">
-                        <h3 class="project-title">Tec Bolg</h3>
-                        <p class="project-description">A página apresenta uma estrutura comum para blogs, com uma barra
-                            de navegação, conteúdo principal e uma barra lateral.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                    <div class="project-image-wrapper">
+                        <img src="./img/Captura de tela 2025-05-04 221709.png" alt="tec-blog" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Blog</div>
+                        <h3 class="project-title">Tec Blog</h3>
+                        <p class="project-description">Blog com estrutura moderna incluindo barra de navegação, conteúdo principal e barra lateral para artigos sobre tecnologia.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-react">
-                    <img src="./img/Captura de tela 2025-05-17 144503.png" alt="tec-blog" loading="lazy">
-                    <div class="project-info">
+                    <div class="project-image-wrapper">
+                        <img src="./img/Captura de tela 2025-05-17 144503.png" alt="tec-blog" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" title="Ver Projeto">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn" title="Ver Código">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">React App</div>
                         <h3 class="project-title">Projeto React.js</h3>
-                        <p class="project-description">Esse é meu projeto prático utilizando a biblioteca React.</p>
-                        <span class="project-tech">HTML, CSS, JavaScript, React</span>
+                        <p class="project-description">Projeto prático desenvolvido utilizando a biblioteca React.js com componentes modernos e reutilizáveis.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-modal-target="#modal-estetica">
                     <img src="./img/Salão Estética.png" alt="estetica" loading="lazy">
                     <div class="project-info">
-                        <h3 class="project-title">Projeto Salão de Estética</h3>
+                        <h3 class="project-title">Projeto Salão de Estetica</h3>
                         <p class="project-description">Este é um website exclusivo e particular desenvolvido pela
                             Dvelloper para um cliente do setor de beleza.</p>
                         <span class="project-tech">HTML, CSS, JavaScript</span>
@@ -341,10 +904,28 @@
     </section>
 
     <section id="contato" class="section contact-section">
+        <!-- Background Effects -->
+        <div class="contact-background">
+            <div class="contact-particles"></div>
+            <div class="contact-gradient-orb contact-orb-1"></div>
+            <div class="contact-gradient-orb contact-orb-2"></div>
+        </div>
+        
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <p class="section-description">Estou sempre aberto a novas oportunidades e desafios. Entre em contato para
-                discutirmos seu projeto!</p>
+            <!-- Header -->
+            <div class="contact-header">
+                <div class="contact-badge">
+                    <span class="badge-icon">💬</span>
+                    <span>Vamos Conversar</span>
+                </div>
+                <h2 class="section-title contact-title">
+                    Entre em <span class="highlight-text">Contato</span>
+                </h2>
+                <p class="section-description contact-description">
+                    Estou sempre aberto a novas oportunidades e desafios. Entre em contato para
+                    discutirmos seu projeto!
+                </p>
+            </div>
             <div class="contact-details">
                 <p><i class="fas fa-envelope"></i> <strong></strong> <a
                         href="mailto:marcelo.slm.mc@gmail.com">marcelo.slm.mc@gmail.com</a></p>
@@ -355,7 +936,7 @@
                         target="_blank" rel="noopener noreferrer">github.com/marceloslm81</a></p>
                 <p><i class="fab fa-instagram"></i> <strong></strong> <a
                         href="https://www.instagram.com/marcelo_dvelloper/?next=%2Fmarcelo_dvellop%2F" target="_blank"
-                        rel="noopener noreferrer">@marcelo_dvelloper</a></p>
+                        rel="noopener noreferrer">@dvelloper_25</a></p>
             </div>
         </div>
     </section>
@@ -693,12 +1274,13 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 Marcelo Silva - Desenvolvedor Full Stack. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Marcelo Silva - Desenvolvedor Front-End. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/sua-chave-do-fontawesome.js" crossorigin="anonymous"></script>
+    <!-- Remover esta linha que está causando conflito -->
+    <!-- <script src="https://kit.fontawesome.com/sua-chave-do-fontawesome.js" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
