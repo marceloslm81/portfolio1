@@ -33,6 +33,9 @@
   --spacing-section: 120px 0;
   --border-radius: 16px;
   --border-radius-lg: 24px;
+  
+  /* Header height para mobile */
+  --header-height-mobile: 72px;
 }
 
 html {
@@ -593,6 +596,7 @@ content: '';
   transition: var(--transition-smooth);
   cursor: pointer;
   border: none;
+  box-sizing: border-box; /* evita overflow quando width:100% + padding */
 }
 
 .btn-primary {
@@ -897,8 +901,14 @@ content: '';
 }
 
 @media (max-width: 768px) {
+  /* Empurra o conteúdo para baixo do header fixo no mobile */
+  body {
+    padding-top: var(--header-height-mobile);
+  }
+  
   .hero-section {
-    padding: 90px 0 50px;
+    padding: 32px 0 50px !important;
+    min-height: auto;
   }
   
   .hero-grid {
@@ -933,6 +943,11 @@ content: '';
   
   .tech-icon span {
     font-size: 0.6rem;
+  }
+  
+  /* Assegura que o header fique acima visualmente */
+  .main-header {
+    z-index: 1000;
   }
 }
 
@@ -1670,6 +1685,9 @@ content: '';
     
     .service-card-inner {
         padding: 30px 25px;
+        height: auto;              /* permite crescer conforme conteúdo */
+        min-height: 380px;         /* garante espaço para os botões */
+        padding-bottom: 24px;      /* respiro na base do card */
     }
     
     .service-icon-wrapper {
@@ -1686,9 +1704,31 @@ content: '';
         font-size: 1.2rem;
     }
     
+    .service-content {
+        display: block;            /* simplifica fluxo vertical */
+    }
+    
+    .service-features {
+        margin-top: 12px;          /* remove empurrar para o fundo */
+    }
+    
+    .service-actions {
+        margin-top: 16px;          /* espaçamento antes dos botões */
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .service-actions .btn {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    
     .services-cta {
         margin-top: 60px;
         padding: 40px 30px;
+        overflow: hidden; /* evita qualquer vazamento horizontal do conteúdo */
     }
     
     .cta-title {
@@ -1697,12 +1737,13 @@ content: '';
     
     .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch; /* faz os botões ocuparem toda a largura */
     }
     
     .cta-buttons .btn {
         width: 100%;
-        max-width: 280px;
+        max-width: 100%;
+        display: block; /* remove inline-flex do cálculo de largura */
     }
 }
 
@@ -2173,13 +2214,20 @@ content: '';
         font-size: 1.2rem;
     }
     
+    .project-overlay {
+        opacity: 1; /* sempre visível no mobile */
+        align-items: flex-end;
+        padding-bottom: 12px;
+    }
+    
     .project-actions {
+        transform: none;
         gap: 12px;
     }
     
     .action-btn {
-        width: 45px;
-        height: 45px;
+        width: 44px;
+        height: 44px;
     }
     
     .portfolio-stats {
@@ -2983,8 +3031,8 @@ content: '';
   margin: 3% auto;
   padding: 0;
   border-radius: 24px;
-  width: 90%;
-  max-width: 950px;
+  width: 82%;
+  max-width: 820px;
   position: relative;
   box-shadow: 
     0 32px 64px rgba(0, 0, 0, 0.6),
@@ -3133,12 +3181,13 @@ content: '';
 .modal-close {
   position: absolute;
   top: 25px;
-  left: 880px;
+  left: 750px;
+  right: 24px;
   background: rgba(0, 245, 255, 0.08);
   border: 1px solid rgba(0, 245, 255, 0.25);
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3591,7 +3640,7 @@ content: '';
 /* Responsividade */
 @media (max-width: 768px) {
   .modal-content {
-    width: 95%;
+    width: 92%;
     margin: 5% auto;
     border-radius: 15px;
   }
@@ -3617,7 +3666,7 @@ content: '';
 
 @media (max-width: 480px) {
   .modal-content {
-    width: 98%;
+    width: 96%;
     margin: 2% auto;
   }
   
@@ -3973,6 +4022,94 @@ content: '';
     display: block;
     width: 80%;
   }
+  
+  /* Bloqueia rolagem do fundo ao abrir modal */
+  body.modal-open {
+    overflow: hidden;
+  }
+
+  /* Overrides móveis: modais totalmente fluidos */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 85%;
+      margin: 6% auto;
+      max-height: calc(100dvh - 40px);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-gutter: stable both-edges;
+      border-radius: 16px;
+    }
+
+    .modal-header,
+    .modal-body {
+      padding: 18px;
+    }
+
+    .modal-title {
+      padding: 20px;
+      font-size: clamp(1.3rem, 4.8vw, 1.8rem);
+    }
+
+    /* Reposiciona botão fechar para top-right no mobile */
+    .modal-close {
+      left: auto;
+      right: 12px;
+      top: 12px;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      transform: none;
+    }
+
+    .modal-actions {
+      flex-direction: vertical;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+
+    .modal-btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Vídeo 100% fluido, sem cortes, respeita viewport */
+    .modal-content video {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+      max-height: 56vh;
+      right: auto;
+      display: block;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .modal-content {
+      margin: 3% auto;
+    }
+
+    .modal-body {
+      padding: 16px;
+    }
+
+    .modal-close {
+      position: relative;
+      left: 270px;
+      right: 8px;
+      top: 4px;
+      width: 26px;
+      height: 26px;
+      font-size: 1.1rem;
+    }
+
+    .modal-content video {
+      max-height: 45vh;
+    }
+  }
 
   /* Footer Mobile */
   .main-footer .container {
@@ -3989,15 +4126,30 @@ content: '';
     margin-left: 15px;
   }
 
+  /* 50% menor no mobile */
   .whatsapp-button {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    bottom: 15px;
-    left: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    bottom: 12px;
+    left: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .scroll-top {
+    width: 25px;
+    height: 25px;
+    font-size: 0.6rem;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .voltar {
+    width: 50px;
+    height: 20px;
+    font-size: calc(15px * 0.5);
   }
 }
 
@@ -4028,6 +4180,7 @@ content: '';
 @media (max-width: 768px) {
   .main-header {
     padding: 10px 0;
+    height: var(--header-height-mobile);
   }
   
   .main-header.scrolled {
@@ -4049,10 +4202,6 @@ content: '';
   .nav-link {
     font-size: 0.85rem;
     padding: 8px 12px;
-  }
-  
-  .hero-section {
-    padding: 90px 0 60px; /* Ajustado para mobile */
   }
 }
 
