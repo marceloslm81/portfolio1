@@ -117,6 +117,32 @@ document.addEventListener('DOMContentLoaded', () => {
       
       lastScrollTop = scrollTop;
     });
+
+    // Portfolio - Load More Projects
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    let projectsDisplayed = 3;
+    const projectsPerPage = 3;
+    const allProjects = document.querySelectorAll('.project-hidden');
+
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            let projectsToShow = 0;
+            
+            // Mostrar próximos 3 projetos
+            allProjects.forEach((project, index) => {
+                if (!project.classList.contains('show') && projectsToShow < projectsPerPage) {
+                    project.classList.add('show');
+                    projectsToShow++;
+                }
+            });
+
+            // Verificar se há mais projetos para mostrar
+            const hiddenProjects = document.querySelectorAll('.project-hidden:not(.show)');
+            if (hiddenProjects.length === 0) {
+                loadMoreBtn.style.display = 'none';
+            }
+        });
+    }
 });
 
 // Substituir a seção de modais (linhas 37-67)
